@@ -5,10 +5,10 @@ from dataclasses import field
 
 @dataclass
 class Card:
-    summary: str = None
-    owner: str = None
+    summary: str = ""
+    owner: str = "mike"
     state: str = "todo"
-    id: int = field(default=None, compare=False)
+    id: int = field(default=None, compare=True)
 
     @classmethod
     def from_dict(cls, d):

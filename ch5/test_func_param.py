@@ -3,9 +3,9 @@ from cards import Card
 
 
 @pytest.mark.parametrize(
-    "start_summary, start_state",
+    ["start_summary", "start_state"],
     [
-        ("write a book", "done"),
+        ["write a book", "done"],
         ("second edition", "in prog"),
         ("create a course", "todo"),
     ],
