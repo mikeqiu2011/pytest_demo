@@ -37,5 +37,10 @@
 ### pytest settings
     cat ch8/project/pytest.ini
 
+### test coverage
+    pytest --cov=cards --cov-report=term-missing ch7
+    pytest --cov=cards --cov-report=html ch7
+    # pragma: no cover
+
 ## ref
     https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/

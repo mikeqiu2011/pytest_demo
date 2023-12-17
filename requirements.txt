@@ -1,2 +1,4 @@
 pytest
 Faker
+coverage
+pytest-cov
